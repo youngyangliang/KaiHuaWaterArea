@@ -1,0 +1,738 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		007983C2205B6EE500843A88 /* BaseMapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 007983C1205B6EE500843A88 /* BaseMapView.m */; };
+		007983C6205B88AB00843A88 /* TileLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 007983C5205B88AB00843A88 /* TileLayer.m */; };
+		009525F9205A7B1A00DF6C75 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 009525F8205A7B1A00DF6C75 /* AppDelegate.m */; };
+		009525FF205A7B1A00DF6C75 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 009525FD205A7B1A00DF6C75 /* Main.storyboard */; };
+		00952601205A7B1A00DF6C75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00952600205A7B1A00DF6C75 /* Assets.xcassets */; };
+		00952604205A7B1A00DF6C75 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00952602205A7B1A00DF6C75 /* LaunchScreen.storyboard */; };
+		00952607205A7B1A00DF6C75 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 00952606205A7B1A00DF6C75 /* main.m */; };
+		00952611205A7B1A00DF6C75 /* KaiHuaWaterAreaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00952610205A7B1A00DF6C75 /* KaiHuaWaterAreaTests.m */; };
+		0095261C205A7B1A00DF6C75 /* KaiHuaWaterAreaUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0095261B205A7B1A00DF6C75 /* KaiHuaWaterAreaUITests.m */; };
+		0095262C205A7C2E00DF6C75 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0095262B205A7C2D00DF6C75 /* BaseViewController.m */; };
+		00952633205A7C3400DF6C75 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00952630205A7C3400DF6C75 /* MainViewController.m */; };
+		178749D80AC861CCDC8852E9 /* libPods-KaiHuaWaterArea.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 71C816D1A9C00ED8AC14B7F1 /* libPods-KaiHuaWaterArea.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0095260D205A7B1A00DF6C75 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 009525EC205A7B1A00DF6C75 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 009525F3205A7B1A00DF6C75;
+			remoteInfo = KaiHuaWaterArea;
+		};
+		00952618205A7B1A00DF6C75 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 009525EC205A7B1A00DF6C75 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 009525F3205A7B1A00DF6C75;
+			remoteInfo = KaiHuaWaterArea;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		007983BE205B63B400843A88 /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
+		007983BF205B64CF00843A88 /* Common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
+		007983C0205B6EE500843A88 /* BaseMapView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseMapView.h; sourceTree = "<group>"; };
+		007983C1205B6EE500843A88 /* BaseMapView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseMapView.m; sourceTree = "<group>"; };
+		007983C4205B88AB00843A88 /* TileLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TileLayer.h; sourceTree = "<group>"; };
+		007983C5205B88AB00843A88 /* TileLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TileLayer.m; sourceTree = "<group>"; };
+		009525F4205A7B1A00DF6C75 /* KaiHuaWaterArea.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KaiHuaWaterArea.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		009525F7205A7B1A00DF6C75 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		009525F8205A7B1A00DF6C75 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		009525FE205A7B1A00DF6C75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		00952600205A7B1A00DF6C75 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		00952603205A7B1A00DF6C75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		00952605205A7B1A00DF6C75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00952606205A7B1A00DF6C75 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0095260C205A7B1A00DF6C75 /* KaiHuaWaterAreaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KaiHuaWaterAreaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00952610205A7B1A00DF6C75 /* KaiHuaWaterAreaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KaiHuaWaterAreaTests.m; sourceTree = "<group>"; };
+		00952612205A7B1A00DF6C75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00952617205A7B1A00DF6C75 /* KaiHuaWaterAreaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KaiHuaWaterAreaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0095261B205A7B1A00DF6C75 /* KaiHuaWaterAreaUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KaiHuaWaterAreaUITests.m; sourceTree = "<group>"; };
+		0095261D205A7B1A00DF6C75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0095262A205A7C2D00DF6C75 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		0095262B205A7C2D00DF6C75 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		0095262F205A7C3400DF6C75 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		00952630205A7C3400DF6C75 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		00952634205A7C9700DF6C75 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		478359D9A7CCA207C212F5AB /* Pods-KaiHuaWaterArea.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KaiHuaWaterArea.release.xcconfig"; path = "Pods/Target Support Files/Pods-KaiHuaWaterArea/Pods-KaiHuaWaterArea.release.xcconfig"; sourceTree = "<group>"; };
+		71C816D1A9C00ED8AC14B7F1 /* libPods-KaiHuaWaterArea.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KaiHuaWaterArea.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B99EDD61B8D5628736DC4DD4 /* Pods-KaiHuaWaterArea.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KaiHuaWaterArea.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KaiHuaWaterArea/Pods-KaiHuaWaterArea.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		009525F1205A7B1A00DF6C75 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				178749D80AC861CCDC8852E9 /* libPods-KaiHuaWaterArea.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00952609205A7B1A00DF6C75 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00952614205A7B1A00DF6C75 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		007983B9205B611E00843A88 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				007983BE205B63B400843A88 /* Header.h */,
+				007983BF205B64CF00843A88 /* Common.h */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		007983BA205B612400843A88 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		007983C3205B888D00843A88 /* MapTileLayer */ = {
+			isa = PBXGroup;
+			children = (
+				007983C4205B88AB00843A88 /* TileLayer.h */,
+				007983C5205B88AB00843A88 /* TileLayer.m */,
+			);
+			path = MapTileLayer;
+			sourceTree = "<group>";
+		};
+		009525EB205A7B1A00DF6C75 = {
+			isa = PBXGroup;
+			children = (
+				009525F6205A7B1A00DF6C75 /* KaiHuaWaterArea */,
+				0095260F205A7B1A00DF6C75 /* KaiHuaWaterAreaTests */,
+				0095261A205A7B1A00DF6C75 /* KaiHuaWaterAreaUITests */,
+				009525F5205A7B1A00DF6C75 /* Products */,
+				23F0F9C945C7359B0923A9E7 /* Pods */,
+				C7D957D82D5D3FB9090AC6FA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		009525F5205A7B1A00DF6C75 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				009525F4205A7B1A00DF6C75 /* KaiHuaWaterArea.app */,
+				0095260C205A7B1A00DF6C75 /* KaiHuaWaterAreaTests.xctest */,
+				00952617205A7B1A00DF6C75 /* KaiHuaWaterAreaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		009525F6205A7B1A00DF6C75 /* KaiHuaWaterArea */ = {
+			isa = PBXGroup;
+			children = (
+				007983C3205B888D00843A88 /* MapTileLayer */,
+				007983BA205B612400843A88 /* Utils */,
+				007983B9205B611E00843A88 /* Config */,
+				0095262D205A7C3400DF6C75 /* Main */,
+				00952629205A7C2D00DF6C75 /* Base */,
+				009525F7205A7B1A00DF6C75 /* AppDelegate.h */,
+				009525F8205A7B1A00DF6C75 /* AppDelegate.m */,
+				009525FD205A7B1A00DF6C75 /* Main.storyboard */,
+				00952600205A7B1A00DF6C75 /* Assets.xcassets */,
+				00952602205A7B1A00DF6C75 /* LaunchScreen.storyboard */,
+				00952605205A7B1A00DF6C75 /* Info.plist */,
+				00952606205A7B1A00DF6C75 /* main.m */,
+				00952634205A7C9700DF6C75 /* PrefixHeader.pch */,
+			);
+			path = KaiHuaWaterArea;
+			sourceTree = "<group>";
+		};
+		0095260F205A7B1A00DF6C75 /* KaiHuaWaterAreaTests */ = {
+			isa = PBXGroup;
+			children = (
+				00952610205A7B1A00DF6C75 /* KaiHuaWaterAreaTests.m */,
+				00952612205A7B1A00DF6C75 /* Info.plist */,
+			);
+			path = KaiHuaWaterAreaTests;
+			sourceTree = "<group>";
+		};
+		0095261A205A7B1A00DF6C75 /* KaiHuaWaterAreaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0095261B205A7B1A00DF6C75 /* KaiHuaWaterAreaUITests.m */,
+				0095261D205A7B1A00DF6C75 /* Info.plist */,
+			);
+			path = KaiHuaWaterAreaUITests;
+			sourceTree = "<group>";
+		};
+		00952629205A7C2D00DF6C75 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				0095262A205A7C2D00DF6C75 /* BaseViewController.h */,
+				0095262B205A7C2D00DF6C75 /* BaseViewController.m */,
+				007983C0205B6EE500843A88 /* BaseMapView.h */,
+				007983C1205B6EE500843A88 /* BaseMapView.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		0095262D205A7C3400DF6C75 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				0095262E205A7C3400DF6C75 /* Controller */,
+				00952631205A7C3400DF6C75 /* Model */,
+				00952632205A7C3400DF6C75 /* View */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		0095262E205A7C3400DF6C75 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0095262F205A7C3400DF6C75 /* MainViewController.h */,
+				00952630205A7C3400DF6C75 /* MainViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		00952631205A7C3400DF6C75 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		00952632205A7C3400DF6C75 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		23F0F9C945C7359B0923A9E7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B99EDD61B8D5628736DC4DD4 /* Pods-KaiHuaWaterArea.debug.xcconfig */,
+				478359D9A7CCA207C212F5AB /* Pods-KaiHuaWaterArea.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C7D957D82D5D3FB9090AC6FA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				71C816D1A9C00ED8AC14B7F1 /* libPods-KaiHuaWaterArea.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		009525F3205A7B1A00DF6C75 /* KaiHuaWaterArea */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00952620205A7B1A00DF6C75 /* Build configuration list for PBXNativeTarget "KaiHuaWaterArea" */;
+			buildPhases = (
+				B079B404D109D92C834274AC /* [CP] Check Pods Manifest.lock */,
+				009525F0205A7B1A00DF6C75 /* Sources */,
+				009525F1205A7B1A00DF6C75 /* Frameworks */,
+				009525F2205A7B1A00DF6C75 /* Resources */,
+				9BAB4833750C150D843D9803 /* [CP] Embed Pods Frameworks */,
+				03D1CC42F67783C4EC850219 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KaiHuaWaterArea;
+			productName = KaiHuaWaterArea;
+			productReference = 009525F4205A7B1A00DF6C75 /* KaiHuaWaterArea.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0095260B205A7B1A00DF6C75 /* KaiHuaWaterAreaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00952623205A7B1A00DF6C75 /* Build configuration list for PBXNativeTarget "KaiHuaWaterAreaTests" */;
+			buildPhases = (
+				00952608205A7B1A00DF6C75 /* Sources */,
+				00952609205A7B1A00DF6C75 /* Frameworks */,
+				0095260A205A7B1A00DF6C75 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0095260E205A7B1A00DF6C75 /* PBXTargetDependency */,
+			);
+			name = KaiHuaWaterAreaTests;
+			productName = KaiHuaWaterAreaTests;
+			productReference = 0095260C205A7B1A00DF6C75 /* KaiHuaWaterAreaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		00952616205A7B1A00DF6C75 /* KaiHuaWaterAreaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00952626205A7B1A00DF6C75 /* Build configuration list for PBXNativeTarget "KaiHuaWaterAreaUITests" */;
+			buildPhases = (
+				00952613205A7B1A00DF6C75 /* Sources */,
+				00952614205A7B1A00DF6C75 /* Frameworks */,
+				00952615205A7B1A00DF6C75 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				00952619205A7B1A00DF6C75 /* PBXTargetDependency */,
+			);
+			name = KaiHuaWaterAreaUITests;
+			productName = KaiHuaWaterAreaUITests;
+			productReference = 00952617205A7B1A00DF6C75 /* KaiHuaWaterAreaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		009525EC205A7B1A00DF6C75 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = booway.com;
+				TargetAttributes = {
+					009525F3205A7B1A00DF6C75 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					0095260B205A7B1A00DF6C75 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 009525F3205A7B1A00DF6C75;
+					};
+					00952616205A7B1A00DF6C75 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 009525F3205A7B1A00DF6C75;
+					};
+				};
+			};
+			buildConfigurationList = 009525EF205A7B1A00DF6C75 /* Build configuration list for PBXProject "KaiHuaWaterArea" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 009525EB205A7B1A00DF6C75;
+			productRefGroup = 009525F5205A7B1A00DF6C75 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				009525F3205A7B1A00DF6C75 /* KaiHuaWaterArea */,
+				0095260B205A7B1A00DF6C75 /* KaiHuaWaterAreaTests */,
+				00952616205A7B1A00DF6C75 /* KaiHuaWaterAreaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		009525F2205A7B1A00DF6C75 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00952604205A7B1A00DF6C75 /* LaunchScreen.storyboard in Resources */,
+				00952601205A7B1A00DF6C75 /* Assets.xcassets in Resources */,
+				009525FF205A7B1A00DF6C75 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0095260A205A7B1A00DF6C75 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00952615205A7B1A00DF6C75 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		03D1CC42F67783C4EC850219 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-KaiHuaWaterArea/Pods-KaiHuaWaterArea-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle",
+				"${PODS_ROOT}/ProgressHUD/ProgressHUD/ProgressHUD/ProgressHUD.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IQKeyboardManager.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ProgressHUD.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KaiHuaWaterArea/Pods-KaiHuaWaterArea-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9BAB4833750C150D843D9803 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KaiHuaWaterArea/Pods-KaiHuaWaterArea-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B079B404D109D92C834274AC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KaiHuaWaterArea-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		009525F0205A7B1A00DF6C75 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				007983C2205B6EE500843A88 /* BaseMapView.m in Sources */,
+				007983C6205B88AB00843A88 /* TileLayer.m in Sources */,
+				00952607205A7B1A00DF6C75 /* main.m in Sources */,
+				0095262C205A7C2E00DF6C75 /* BaseViewController.m in Sources */,
+				009525F9205A7B1A00DF6C75 /* AppDelegate.m in Sources */,
+				00952633205A7C3400DF6C75 /* MainViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00952608205A7B1A00DF6C75 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00952611205A7B1A00DF6C75 /* KaiHuaWaterAreaTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00952613205A7B1A00DF6C75 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0095261C205A7B1A00DF6C75 /* KaiHuaWaterAreaUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0095260E205A7B1A00DF6C75 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 009525F3205A7B1A00DF6C75 /* KaiHuaWaterArea */;
+			targetProxy = 0095260D205A7B1A00DF6C75 /* PBXContainerItemProxy */;
+		};
+		00952619205A7B1A00DF6C75 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 009525F3205A7B1A00DF6C75 /* KaiHuaWaterArea */;
+			targetProxy = 00952618205A7B1A00DF6C75 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		009525FD205A7B1A00DF6C75 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				009525FE205A7B1A00DF6C75 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		00952602205A7B1A00DF6C75 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				00952603205A7B1A00DF6C75 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0095261E205A7B1A00DF6C75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		0095261F205A7B1A00DF6C75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		00952621205A7B1A00DF6C75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B99EDD61B8D5628736DC4DD4 /* Pods-KaiHuaWaterArea.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PECE95572E;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/KaiHuaWaterArea/PrefixHeader.pch";
+				INFOPLIST_FILE = KaiHuaWaterArea/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = booway.com.KaiHuaWaterArea;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		00952622205A7B1A00DF6C75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 478359D9A7CCA207C212F5AB /* Pods-KaiHuaWaterArea.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PECE95572E;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/KaiHuaWaterArea/PrefixHeader.pch";
+				INFOPLIST_FILE = KaiHuaWaterArea/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = booway.com.KaiHuaWaterArea;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Release;
+		};
+		00952624205A7B1A00DF6C75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PECE95572E;
+				INFOPLIST_FILE = KaiHuaWaterAreaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = booway.com.KaiHuaWaterAreaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KaiHuaWaterArea.app/KaiHuaWaterArea";
+			};
+			name = Debug;
+		};
+		00952625205A7B1A00DF6C75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PECE95572E;
+				INFOPLIST_FILE = KaiHuaWaterAreaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = booway.com.KaiHuaWaterAreaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KaiHuaWaterArea.app/KaiHuaWaterArea";
+			};
+			name = Release;
+		};
+		00952627205A7B1A00DF6C75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PECE95572E;
+				INFOPLIST_FILE = KaiHuaWaterAreaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = booway.com.KaiHuaWaterAreaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KaiHuaWaterArea;
+			};
+			name = Debug;
+		};
+		00952628205A7B1A00DF6C75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PECE95572E;
+				INFOPLIST_FILE = KaiHuaWaterAreaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = booway.com.KaiHuaWaterAreaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KaiHuaWaterArea;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		009525EF205A7B1A00DF6C75 /* Build configuration list for PBXProject "KaiHuaWaterArea" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0095261E205A7B1A00DF6C75 /* Debug */,
+				0095261F205A7B1A00DF6C75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00952620205A7B1A00DF6C75 /* Build configuration list for PBXNativeTarget "KaiHuaWaterArea" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00952621205A7B1A00DF6C75 /* Debug */,
+				00952622205A7B1A00DF6C75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00952623205A7B1A00DF6C75 /* Build configuration list for PBXNativeTarget "KaiHuaWaterAreaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00952624205A7B1A00DF6C75 /* Debug */,
+				00952625205A7B1A00DF6C75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00952626205A7B1A00DF6C75 /* Build configuration list for PBXNativeTarget "KaiHuaWaterAreaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00952627205A7B1A00DF6C75 /* Debug */,
+				00952628205A7B1A00DF6C75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 009525EC205A7B1A00DF6C75 /* Project object */;
+}
